@@ -10,25 +10,27 @@ namespace demo.frm.domain.Entities.ValueObjects
 {
     public class Email
     {
-        public const int EnderecoMaxLength = 100;
+        public const int EnderecoMaxLength = 254;
         public string Endereco { get; private set; }
 
+        // Construtor para o EntityFramework utilizar
         protected Email() { }
-
-        public static bool IsValid(string email)
-        {
-            var regexEmail = new Regex(@"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$");
-            return regexEmail.IsMatch(email);
-        }
 
         public Email(string endereco)
         {
+            ValidationHelper.ForNullOrEmptyDefaultMessage(endereco, "E-mail");
             ValidationHelper.StringLength("E-mail", endereco, EnderecoMaxLength);
 
             if (IsValid(endereco) == false)
                 throw new Exception("E-mail inválido");
 
             Endereco = endereco;
+        }
+
+        public static bool IsValid(string email)
+        {
+            var regexEmail = new Regex(@"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$");
+            return regexEmail.IsMatch(email);
         }
     }
 }

@@ -1,0 +1,1 @@
+packages\NUnit.Runners.2.6.3\tools\nunit-console.exe demo.frm.infrastructure.data.tests\bin\Debug\demo.frm.infrastructure.data.tests.dll /noshadow

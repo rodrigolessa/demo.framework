@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using demo.frm.domain.Entities;
+using demo.frm.infrastructure;
 
 namespace demo.frm.domain
 {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace demo.frm.ui.web.controller
+namespace demo.frm.domain.Extensions
 {
-    public class Class1
+    class EnumExtensions
     {
     }
 }

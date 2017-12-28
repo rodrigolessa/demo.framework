@@ -49,15 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="MainUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\PaisRepository.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="UnitOfWork\EntityTypeConfigurations\PaisTypeConfiguration.cs" />
+    <Compile Include="UnitOfWork\MainUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
-    <Folder Include="EntityTypeConfigurations\" />
-    <Folder Include="Repositories\" />
+    <Folder Include="ServiceAgent\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\demo.frm.domain\demo.frm.domain.csproj">

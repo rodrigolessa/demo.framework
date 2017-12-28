@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace demo.frm.servicehost
+namespace demo.frm.infrastructure.Validator
 {
-    public class Class1
+    public interface IEntityValidatorFactory
     {
+        IEntityValidator Create();
     }
 }

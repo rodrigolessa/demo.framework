@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace demo.frm.application
+namespace demo.frm.infrastructure.Logging
 {
-    public class Class1
+    public interface ILogService
     {
+        Boolean Gerar(Log log);
     }
 }

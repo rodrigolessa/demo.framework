@@ -1,0 +1,1 @@
+packages\OpenCover.4.5.3207\OpenCover.Console.exe -target:run-tests.bat -register:user -filter:"+[frm*]* -[frm*Test*]*" -output:outputCoverage.xml -hideskipped:Filter
