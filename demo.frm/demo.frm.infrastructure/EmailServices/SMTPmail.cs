@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace demo.frm.infrastructure.Email
+namespace demo.frm.infrastructure.EmailServices
 {
     public partial class SMTPmail : IEmailService
     {

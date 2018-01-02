@@ -51,8 +51,10 @@
   <ItemGroup>
     <Compile Include="MainUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ExemploRepository.cs" />
     <Compile Include="Repositories\PaisRepository.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="UnitOfWork\EntityTypeConfigurations\ExemploTypeConfiguration.cs" />
     <Compile Include="UnitOfWork\EntityTypeConfigurations\PaisTypeConfiguration.cs" />
     <Compile Include="UnitOfWork\MainUnitOfWork.cs" />
   </ItemGroup>

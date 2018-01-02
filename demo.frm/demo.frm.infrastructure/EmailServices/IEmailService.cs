@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace demo.frm.infrastructure.Email
+namespace demo.frm.infrastructure.EmailServices
 {
     public interface IEmailService
     {
